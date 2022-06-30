@@ -1,8 +1,7 @@
-import api from './api.js';
-import request from '../utils/request.js';
+import api from './api';
+import request from '../utils/request';
 
-export function Login(params){
-   console.log(api.login)
+export function Login(params: any){
    return request.get({
       url:api.Login,
       params
