@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import { Routes, Route } from "react-router-dom";
 import {Login} from './api/index';
+import  Foo  from './page/foo';
+// console.log(typeof foo);
 export class FileName extends Component {
   constructor(props: any) {
     super(props);
@@ -13,7 +16,11 @@ export class FileName extends Component {
   }
   render() {
 
-    return <div>$2</div>
+    return (
+      <Routes>
+        <Route path="/foo" element={<Foo/>}/>
+      </Routes>
+    )
 
   }
 
