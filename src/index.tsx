@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+console.log(process.env);
 ReactDOM.render(
   <BrowserRouter>
     <App />
