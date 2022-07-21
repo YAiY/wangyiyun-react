@@ -7,6 +7,12 @@ module.exports = function(app) {
       changeOrigin: true,
       secure: true,
       pathRewrite: {'^/api': ''},
-    })
+    }),
+    proxy('/local', {
+      target: 'http://localhost:3001', // 测试环境
+      changeOrigin: true,
+      secure: false,
+      pathRewrite: {'^/local': ''},
+    }),
   )
 }

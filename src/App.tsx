@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Routes, Route } from "react-router-dom";
 import {Login} from './api/index';
-import  Foo  from './page/foo';
+import  Layout  from './page/layout/index';
 // console.log(typeof foo);
 export class FileName extends Component {
   constructor(props: any) {
@@ -18,7 +18,7 @@ export class FileName extends Component {
 
     return (
       <Routes>
-        <Route path="/foo" element={<Foo/>}/>
+        <Route path="/home" element={<Layout/>}/>
       </Routes>
     )
 
